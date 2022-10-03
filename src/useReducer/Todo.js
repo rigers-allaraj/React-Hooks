@@ -1,10 +1,10 @@
 import React from 'react';
-import { ACTIONS } from './App.js';
+import { ACTIONS } from './index.js';
 
 const Todo = ({ todo, dispatch }) => {
   return (
     <div>
-      <span style={{ color: todo.complete ? '#AAA' : '#000' }}>
+      <span style={{ color: todo.complete ? '#AAA' : '#000', width: '400px',padding:'10px' }}>
         {todo.name}
       </span>
       <button

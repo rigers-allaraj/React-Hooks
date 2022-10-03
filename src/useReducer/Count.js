@@ -1,5 +1,5 @@
 import React from 'react';
-import { COUNT_ACTIONS } from './App.js';
+import { COUNT_ACTIONS } from './index.js';
 
 export const Count = ({ state, dispatch }) => {
   const decrement = () => {
@@ -12,7 +12,7 @@ export const Count = ({ state, dispatch }) => {
 
   return (
     <div style={{ margin: '2rem' }}>
-      <p style={{ margin: '0.2em' }}>Count:</p>
+      <p style={{ margin: '0.2em', fontSize: "2rem" }}>Count:</p>
       <button onClick={decrement}>-</button>
       <span style={{ margin: '0.5em' }}>{state.count}</span>
       <button onClick={increment}>+</button>
